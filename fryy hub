@@ -1,0 +1,74 @@
+_G.SAEConfig = _G.SAEConfig or {
+    ["Movement"] = {
+        ["Mode"] = "Teleport",
+        ["Speed"] = 800,
+    },
+
+    ["Farming"] = {
+        ["Auto Tutorial"] = true,
+        ["Auto Full Index"] = true,
+        ["Auto Treadmill"] = true,
+        ["Auto Upgrade Treadmill"] = true,
+        ["Auto Upgrade Base"] = true,
+        ["Auto Place"] = true,
+        ["Auto Hatch"] = true,
+        ["Auto Claim Reward Index"] = true,
+        ["Auto Equip Best Pets"] = true,
+        ["Claim Offline Earnings"] = true,
+    },
+
+    ["Stealing"] = {
+        ["Auto Steal"] = true,
+        ["Farm Areas"] = {},
+        ["Target Rarities"] = {},
+        ["Target Mutations"] = {},
+        ["Minimum Value"] = 0,
+    },
+
+    ["Selling"] = {
+        ["Auto Sell Pets"] = false,
+        ["Auto Sell Eggs"] = false,
+        ["Target Rarities"] = {},
+        ["Minimum Value"] = 0,
+        ["Weight Mode"] = "None",
+        ["Weight"] = 10,
+        ["Delay"] = 5,
+    },
+
+    ["Favoriting"] = {
+        ["Auto Favorite"] = false,
+        ["Target Categories"] = {},
+        ["Target Rarities"] = {},
+    },
+
+    ["Fusing"] = {
+        ["Auto Fuse"] = false,
+        ["Target Categories"] = {},
+        ["Target Rarities"] = {},
+    },
+
+    ["Events"] = {
+        ["Dr. Scramble"] = {
+            ["Auto Hunt Experiments"] = false,
+            ["Minimum Drone HP"] = 0,
+            ["Auto Collect Gear"] = false,
+            ["Auto Buy Shop"] = false,
+            ["Shop Item"] = "Scrambled",
+        },
+    },
+
+    ["Webhook"] = {
+        ["URL"] = "",
+        ["Rarities"] = {},
+        ["Notify On Steal"] = false,
+        ["Notify On Hatch"] = false,
+    },
+
+    ["Misc"] = {
+        ["Anti AFK"] = true,
+        ["Auto Reconnect"] = true,
+        ["FPS Boost"] = false,
+    },
+}
+
+loadstring(game:HttpGet("https://limbohub.my.id/hub/kaitunsae.lua"))()
